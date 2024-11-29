@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:graduation_project/core/helpers/spacing.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
 
 class SignupTexts extends StatelessWidget {
@@ -11,11 +13,12 @@ class SignupTexts extends StatelessWidget {
       children: [
         Text(
           'Create Account',
-          style: TextStyles.font14BlackRegular,
+          style: TextStyles.font28DarkBlueBold,
         ),
+        verticalSpace(10.h),
         Text(
           'Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!',
-          style: TextStyles.font14BlackRegular,
+          style: TextStyles.font14greyNormal,
         ),
       ],
     );

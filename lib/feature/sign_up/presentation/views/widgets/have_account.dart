@@ -17,7 +17,7 @@ class HaveAccount extends StatelessWidget {
         TextSpan(
           text: 'Log in',
           style: TextStyles.font14BlackRegular
-              .copyWith(fontWeight: FontWeight.w500),
+              .copyWith(fontWeight: FontWeight.bold),
           recognizer: TapGestureRecognizer()
             ..onTap = () {
               context.pop();

@@ -65,7 +65,7 @@ class _SignupFormState extends State<SignupForm> {
             },
             // controller: nameController,
             keyboardType: TextInputType.visiblePassword,
-            hintText: 'Name',
+            hintText: 'Username',
           ),
           verticalSpace(20),
           CustomTextFormField(
@@ -79,19 +79,6 @@ class _SignupFormState extends State<SignupForm> {
             // controller: emailController,
             keyboardType: TextInputType.emailAddress,
             hintText: 'Email',
-          ),
-          verticalSpace(20),
-          CustomTextFormField(
-            validator: (value) {
-              // if (value == null ||
-              //     value.isEmpty ||
-              //     AppRegex.isPhoneValid(value)) {
-              //   return 'Please enter a valid number';
-              // }
-            },
-            // controller: phoneController,
-            keyboardType: TextInputType.phone,
-            hintText: 'Phone',
           ),
           verticalSpace(20),
           CustomTextFormField(

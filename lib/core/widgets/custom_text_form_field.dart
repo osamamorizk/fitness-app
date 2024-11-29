@@ -22,7 +22,6 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // height: 50,
       width: double.infinity,
       child: TextFormField(
         controller: controller,
@@ -42,19 +41,19 @@ class CustomTextFormField extends StatelessWidget {
           fillColor: ColorsManger.lightGrey,
           hintStyle: TextStyles.font14greyNormal,
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(20),
             borderSide: BorderSide(width: 1, color: ColorsManger.darkGrey),
           ),
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(20),
             borderSide: const BorderSide(width: 1, color: Colors.blue),
           ),
           errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(20),
             borderSide: const BorderSide(width: 1.4, color: Colors.red),
           ),
           focusedErrorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(20),
             borderSide: const BorderSide(width: 1, color: Colors.red),
           ),
         ),

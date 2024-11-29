@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
+import 'package:graduation_project/core/widgets/google_button.dart';
+import 'package:graduation_project/core/widgets/or_widget.dart';
 import 'package:graduation_project/feature/sign_up/presentation/views/widgets/have_account.dart';
 import 'package:graduation_project/feature/sign_up/presentation/views/widgets/sign_up_actions.dart';
 import 'package:graduation_project/feature/sign_up/presentation/views/widgets/signup_form.dart';
@@ -19,15 +21,18 @@ class SignUpView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               verticalSpace(50.h),
-              SignupTexts(),
+              const SignupTexts(),
               verticalSpace(30.h),
-              SignupForm(),
+              const SignupForm(),
               verticalSpace(16.h),
-              SignUpActions(),
-              verticalSpace(10.h),
-              HaveAccount(),
+              const SignUpActions(),
               verticalSpace(16.h),
-              // SignUpListener(),
+              const OrWidget(),
+              verticalSpace(16.h),
+              const GoogleButton(),
+              verticalSpace(16.h),
+              const HaveAccount(),
+              verticalSpace(16.h),
             ],
           ),
         ),
