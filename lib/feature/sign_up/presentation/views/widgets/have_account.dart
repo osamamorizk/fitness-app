@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:graduation_project/core/helpers/extensions.dart';
+import 'package:graduation_project/core/routes/routes.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
 
 class HaveAccount extends StatelessWidget {
@@ -20,7 +21,7 @@ class HaveAccount extends StatelessWidget {
               .copyWith(fontWeight: FontWeight.bold),
           recognizer: TapGestureRecognizer()
             ..onTap = () {
-              context.pop();
+              context.pushNamed(Routes.login);
             },
         ),
       ]),

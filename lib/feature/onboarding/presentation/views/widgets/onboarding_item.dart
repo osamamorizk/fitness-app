@@ -24,7 +24,7 @@ class OnboardingItem extends StatelessWidget {
         verticalSpace(32),
         Text(
           onboardingModel.title,
-          style: TextStyles.font18BlueBold,
+          style: TextStyles.font22BlueBold,
         ),
       ],
     );

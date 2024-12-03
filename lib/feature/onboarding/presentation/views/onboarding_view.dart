@@ -14,28 +14,30 @@ class OnboardingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final PageController pageController = PageController();
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 555,
-              child: PageView.builder(
-                controller: pageController,
-                itemCount: onboardingList.length,
-                itemBuilder: (context, index) {
-                  return OnboardingItem(
-                    onboardingModel: onboardingList[index],
-                  );
-                },
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 555,
+                child: PageView.builder(
+                  controller: pageController,
+                  itemCount: onboardingList.length,
+                  itemBuilder: (context, index) {
+                    return OnboardingItem(
+                      onboardingModel: onboardingList[index],
+                    );
+                  },
+                ),
               ),
-            ),
-            verticalSpace(16.h),
-            CustomIndicator(pageController: pageController),
-            verticalSpace(16.h),
-            const ActionsOnboarding(),
-          ],
+              verticalSpace(16.h),
+              CustomIndicator(pageController: pageController),
+              verticalSpace(16.h),
+              const ActionsOnboarding(),
+            ],
+          ),
         ),
       ),
     );
