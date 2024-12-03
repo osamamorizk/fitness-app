@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
+import 'package:graduation_project/core/themes/text_styles.dart';
 import 'package:graduation_project/core/widgets/custom_text_form_field.dart';
-import 'package:graduation_project/core/widgets/password_validations.dart';
 
 class SignupForm extends StatefulWidget {
   const SignupForm({super.key});
@@ -124,13 +124,17 @@ class _SignupFormState extends State<SignupForm> {
             hintText: 'Confirm Password',
           ),
           verticalSpace(8),
-          PasswordValidations(
-            hasLowerCase: hasLowerCase,
-            hasUpperCase: hasUpperCase,
-            hasNaumber: hasNaumber,
-            hasSpecialCharcter: hasSpecialCharcter,
-            hasMinLength: hasMinLength,
+          Text(
+            'Note: Password must contain lower case ,upper case, special char and it\'s length is 8.',
+            style: TextStyles.font14greyNormal,
           ),
+          // PasswordValidations(
+          //   hasLowerCase: hasLowerCase,
+          //   hasUpperCase: hasUpperCase,
+          //   hasNaumber: hasNaumber,
+          //   hasSpecialCharcter: hasSpecialCharcter,
+          //   hasMinLength: hasMinLength,
+          // ),
         ],
       ),
     );

@@ -17,13 +17,5 @@ class Assets {
   /// Assets for imagesOnboarding3
   /// assets/images/onboarding_3.png
   static const String imagesOnboarding3 = "assets/images/onboarding_3.png";
-
-  /// Assets for imagesOnboarding4
-  /// assets/images/onboarding_4.png
-  static const String imagesOnboarding4 = "assets/images/onboarding_4.png";
-
-  /// Assets for imagesOnboarding5
-  /// assets/images/onboarding_5.png
-  static const String imagesOnboarding5 = "assets/images/onboarding_5.png";
 }
 

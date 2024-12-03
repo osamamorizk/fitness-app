@@ -20,16 +20,4 @@ List<OnboardingModel> onboardingList = [
     description:
         'Find diet plans tailored to your lifestyle and health needs and explore personalized nutritional guidance to keep every meal nourishing and aligned with your wellness goals.',
   ),
-  OnboardingModel(
-    image: Assets.imagesOnboarding4,
-    title: 'Comprehensive Exercise',
-    description:
-        'Access a full library of exercises, organized by muscle groups. Perfect your form and discover routines tailored to build strength and flexibility.',
-  ),
-  // OnboardingModel(
-  //   image: Assets.imagesOnboarding5,
-  //   title: 'Progress Tracking',
-  //   description:
-  //       'Get real-time insights into your daily intake and track your meals seamlessly. Perfect to stay informed and make healthier choices with ease.',
-  // ),
 ];

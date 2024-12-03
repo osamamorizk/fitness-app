@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:graduation_project/core/helpers/extensions.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
+import 'package:graduation_project/core/routes/routes.dart';
 import 'package:graduation_project/core/themes/colors_manger.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
 import 'package:graduation_project/core/widgets/custom_action_button.dart';
@@ -55,6 +57,7 @@ class _LoginActionsState extends State<LoginActions> {
         verticalSpace(16.h),
         CustomButton(
           onPressed: () {
+            context.pushNamed(Routes.home);
             // if (context.read<LoginCubit>().formKey.currentState!.validate()) {
             //   context.read<LoginCubit>().login(
             //         email: context.read<LoginCubit>().emailController.text,

@@ -15,24 +15,16 @@ class OnboardingItem extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Image.asset(onboardingModel.image),
+        Image.asset(
+          fit: BoxFit.fill,
+          width: double.infinity,
+          height: 525.h,
+          onboardingModel.image,
+        ),
         verticalSpace(32),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                onboardingModel.title,
-                style: TextStyles.font18BlackBold,
-              ),
-              verticalSpace(16.h),
-              Text(
-                onboardingModel.description,
-                style: TextStyles.font14BlackRegular,
-              ),
-            ],
-          ),
+        Text(
+          onboardingModel.title,
+          style: TextStyles.font18BlueBold,
         ),
       ],
     );
