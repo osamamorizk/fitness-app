@@ -7,14 +7,18 @@ class CustomSingleSelectedItem extends StatelessWidget {
   const CustomSingleSelectedItem({
     super.key,
     required this.title,
-    required this.image,
-    required this.subtitle,
+    this.image,
+    this.subtitle,
     required this.isSelected,
+    this.titleAlignment,
+    this.textAlign,
   });
   final String title;
-  final String image;
-  final String subtitle;
+  final Image? image;
+  final Text? subtitle;
   final bool isSelected;
+  final ListTileTitleAlignment? titleAlignment;
+  final TextAlign? textAlign;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -27,16 +31,15 @@ class CustomSingleSelectedItem extends StatelessWidget {
               color:
                   !isSelected ? Colors.grey.shade300 : ColorsManger.darkBlue)),
       child: ListTile(
+        titleAlignment: titleAlignment,
         minTileHeight: 60,
-        leading: Image.asset(image),
+        leading: image,
         title: Text(
+          textAlign: textAlign,
           title,
           style: TextStyles.font14BlackBold,
         ),
-        subtitle: Text(
-          subtitle,
-          style: TextStyles.font14greyNormal.copyWith(fontSize: 12),
-        ),
+        subtitle: subtitle,
       ),
     );
   }

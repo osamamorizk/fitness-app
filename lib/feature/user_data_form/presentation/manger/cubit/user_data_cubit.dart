@@ -18,4 +18,11 @@ class UserDataCubit extends Cubit<UserDataState> {
   String activityLevel = '';
   TextEditingController otherDietaryRestrictionsController =
       TextEditingController();
+  String dietKind = '';
+  List<String> helthConcerns = [];
+  TextEditingController otherHelthConcernsController = TextEditingController();
+  String fitnessLevel = '';
+  String workoutDays = '';
+  List<String> preferedExercise = [];
+  TextEditingController preferedExerciseController = TextEditingController();
 }

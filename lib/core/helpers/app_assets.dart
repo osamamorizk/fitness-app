@@ -18,6 +18,14 @@ class Assets {
   /// assets/icons/3bar.png
   static const String icons3bar = "assets/icons/3bar.png";
 
+  /// Assets for iconsCardio
+  /// assets/icons/cardio.png
+  static const String iconsCardio = "assets/icons/cardio.png";
+
+  /// Assets for iconsDedliftStrength
+  /// assets/icons/dedlift_strength.png
+  static const String iconsDedliftStrength = "assets/icons/dedlift_strength.png";
+
   /// Assets for iconsGainWeight
   /// assets/icons/gain_weight.png
   static const String iconsGainWeight = "assets/icons/gain_weight.png";
@@ -34,6 +42,10 @@ class Assets {
   /// assets/icons/lose_weight.png
   static const String iconsLoseWeight = "assets/icons/lose_weight.png";
 
+  /// Assets for iconsOthericon
+  /// assets/icons/Othericon.png
+  static const String iconsOthericon = "assets/icons/Othericon.png";
+
   /// Assets for iconsReduceStress
   /// assets/icons/reduce_stress.png
   static const String iconsReduceStress = "assets/icons/reduce_stress.png";
@@ -41,6 +53,14 @@ class Assets {
   /// Assets for iconsStrenght
   /// assets/icons/strenght.png
   static const String iconsStrenght = "assets/icons/strenght.png";
+
+  /// Assets for iconsSwimming
+  /// assets/icons/swimming.png
+  static const String iconsSwimming = "assets/icons/swimming.png";
+
+  /// Assets for iconsYoga
+  /// assets/icons/yoga.png
+  static const String iconsYoga = "assets/icons/yoga.png";
 
   /// Assets for imagesOnboarding1
   /// assets/images/onboarding_1.png
