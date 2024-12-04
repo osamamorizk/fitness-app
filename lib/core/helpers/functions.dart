@@ -3,11 +3,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/themes/colors_manger.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
 
-AppBar customDataFormBar() {
+AppBar customDataFormBar(void Function()? onPressed, double? value) {
   return AppBar(
     backgroundColor: Colors.white,
     leading: IconButton(
-      onPressed: () {},
+      onPressed: onPressed,
       icon: Icon(
         size: 22,
         Icons.arrow_back,
@@ -18,7 +18,7 @@ AppBar customDataFormBar() {
       child: LinearProgressIndicator(
         minHeight: 4,
         borderRadius: BorderRadius.circular(2),
-        value: 1 / 5,
+        value: value,
         backgroundColor: Colors.grey[300],
         color: ColorsManger.darkBlue,
       ),

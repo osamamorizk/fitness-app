@@ -32,6 +32,12 @@ class _HealthConcernsViewState extends State<HealthConcernsView> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            verticalSpace(35.h),
+            Text(
+              'Do you have any medical conditions or physical limitations that we should be aware of?',
+              style: TextStyles.font18BlackBold,
+            ),
+            verticalSpace(40.h),
             ListView.separated(
               shrinkWrap: true,
               separatorBuilder: (context, index) => verticalSpace(15.h),
@@ -50,6 +56,12 @@ class _HealthConcernsViewState extends State<HealthConcernsView> {
                           selectedHealthConcerns.add(restrictions);
                           BlocProvider.of<UserDataCubit>(context)
                               .helthConcerns = selectedHealthConcerns;
+                        }
+                        if (index == healthConcerns.length - 1) {
+                          selectedHealthConcerns.add(
+                              BlocProvider.of<UserDataCubit>(context)
+                                  .preferedExerciseController
+                                  .text);
                         }
                       });
                     },

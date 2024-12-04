@@ -22,7 +22,7 @@ class CustomSingleSelectedItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60.h,
+      height: 57.h,
       decoration: BoxDecoration(
           color: !isSelected ? Colors.white : ColorsManger.lighterBlue,
           borderRadius: BorderRadius.circular(10),
@@ -32,7 +32,7 @@ class CustomSingleSelectedItem extends StatelessWidget {
                   !isSelected ? Colors.grey.shade300 : ColorsManger.darkBlue)),
       child: ListTile(
         titleAlignment: titleAlignment,
-        minTileHeight: 60,
+        minTileHeight: 57.h,
         leading: image,
         title: Text(
           textAlign: textAlign,

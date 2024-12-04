@@ -34,31 +34,36 @@ class _FitnessLevelViewState extends State<FitnessLevelView> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
-            child: ListView.separated(
-                separatorBuilder: (context, index) => verticalSpace(32.h),
-                shrinkWrap: true,
-                itemCount: titles.length,
-                itemBuilder: (context, index) => GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          selectedIndex = index;
-                          BlocProvider.of<UserDataCubit>(context).fitnessLevel =
-                              titles[index];
-                        });
-                      },
-                      child: CustomSingleSelectedItem(
-                        title: titles[index],
-                        subtitle: Text(
-                          descriptions[index],
-                          style: TextStyles.font14greyNormal
-                              .copyWith(fontSize: 12),
-                        ),
-                        isSelected: selectedIndex == index,
-                      ),
-                    )),
+          verticalSpace(35.h),
+          Text(
+            'What is your Fitness level?',
+            style: TextStyles.font18BlackBold,
           ),
+          verticalSpace(40.h),
+          ListView.separated(
+              separatorBuilder: (context, index) => verticalSpace(32.h),
+              shrinkWrap: true,
+              itemCount: titles.length,
+              itemBuilder: (context, index) => GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        selectedIndex = index;
+                        BlocProvider.of<UserDataCubit>(context).fitnessLevel =
+                            titles[index];
+                      });
+                    },
+                    child: CustomSingleSelectedItem(
+                      title: titles[index],
+                      subtitle: Text(
+                        descriptions[index],
+                        style:
+                            TextStyles.font14greyNormal.copyWith(fontSize: 12),
+                      ),
+                      isSelected: selectedIndex == index,
+                    ),
+                  )),
         ],
       ),
     );

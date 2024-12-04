@@ -25,4 +25,6 @@ class UserDataCubit extends Cubit<UserDataState> {
   String workoutDays = '';
   List<String> preferedExercise = [];
   TextEditingController preferedExerciseController = TextEditingController();
+
+  List<String> userMotivation = [];
 }

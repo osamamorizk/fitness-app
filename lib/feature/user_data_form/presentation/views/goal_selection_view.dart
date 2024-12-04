@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/helpers/app_assets.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
-import 'package:graduation_project/core/widgets/custom_action_button.dart';
+import 'package:graduation_project/core/themes/text_styles.dart';
 import 'package:graduation_project/feature/user_data_form/presentation/manger/cubit/user_data_cubit.dart';
 import 'package:graduation_project/feature/user_data_form/presentation/views/widgets/custom_multi_selection.dart';
 
@@ -27,42 +27,49 @@ class GoalSelectionScreenState extends State<GoalSelectionScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const SizedBox(height: 16),
-        ListView.builder(
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          itemCount: goals.length,
-          itemBuilder: (context, index) {
-            final goal = goals[index];
-            final bool isSelected = selectedGoals.contains(goal);
-            return GestureDetector(
-              onTap: () {
-                setState(() {
-                  if (isSelected) {
-                    selectedGoals.remove(goal);
-                    BlocProvider.of<UserDataCubit>(context).userGoals =
-                        selectedGoals;
-                  } else {
-                    selectedGoals.add(goal);
-                    BlocProvider.of<UserDataCubit>(context).userGoals =
-                        selectedGoals;
-                  }
-                });
-              },
-              child: CustomMultiSelectionItem(
-                isSelected: isSelected,
-                goal: goal,
-                image: getImageForGoal(goal),
-              ),
-            );
-          },
-        ),
-        verticalSpace(100.h),
-        const CustomButton(text: 'Continue'),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          verticalSpace(35.h),
+          Text(
+            'What is your goal?',
+            style: TextStyles.font18BlackBold,
+          ),
+          verticalSpace(35.h),
+          ListView.separated(
+            separatorBuilder: (context, index) => verticalSpace(24.h),
+            shrinkWrap: true,
+            // physics: const NeverScrollableScrollPhysics(),
+            itemCount: goals.length,
+            itemBuilder: (context, index) {
+              final goal = goals[index];
+              final bool isSelected = selectedGoals.contains(goal);
+              return GestureDetector(
+                onTap: () {
+                  setState(() {
+                    if (isSelected) {
+                      selectedGoals.remove(goal);
+                      BlocProvider.of<UserDataCubit>(context).userGoals =
+                          selectedGoals;
+                    } else {
+                      selectedGoals.add(goal);
+                      BlocProvider.of<UserDataCubit>(context).userGoals =
+                          selectedGoals;
+                    }
+                  });
+                },
+                child: CustomMultiSelectionItem(
+                  isSelected: isSelected,
+                  goal: goal,
+                  image: getImageForGoal(goal),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
     );
   }
 

@@ -32,9 +32,15 @@ class _DietaryRestrictionsViewState extends State<DietaryRestrictionsView> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            verticalSpace(35.h),
+            Text(
+              'Do you have any dietary restrictions, allergies or foods you dislike?',
+              style: TextStyles.font18BlackBold,
+            ),
+            verticalSpace(40.h),
             ListView.separated(
               shrinkWrap: true,
-              separatorBuilder: (context, index) => verticalSpace(15.h),
+              separatorBuilder: (context, index) => verticalSpace(24.h),
               itemBuilder: (context, index) {
                 final restrictions = options[index];
                 final bool isRestrict =
@@ -52,6 +58,12 @@ class _DietaryRestrictionsViewState extends State<DietaryRestrictionsView> {
                           BlocProvider.of<UserDataCubit>(context)
                                   .dietaryRestrictions =
                               selectedDietaryRestrictions;
+                        }
+                        if (index == options.length - 1) {
+                          selectedDietaryRestrictions.add(
+                              BlocProvider.of<UserDataCubit>(context)
+                                  .preferedExerciseController
+                                  .text);
                         }
                       });
                     },

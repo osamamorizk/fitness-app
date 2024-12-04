@@ -40,6 +40,12 @@ class _TypeOfExerciseViewState extends State<TypeOfExerciseView> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            verticalSpace(35.h),
+            Text(
+              'What type of exercises do you enjoy?',
+              style: TextStyles.font18BlackBold,
+            ),
+            verticalSpace(40.h),
             ListView.separated(
               shrinkWrap: true,
               separatorBuilder: (context, index) => verticalSpace(15.h),
@@ -58,6 +64,12 @@ class _TypeOfExerciseViewState extends State<TypeOfExerciseView> {
                           typeOfPreferedExercise.add(restrictions);
                           BlocProvider.of<UserDataCubit>(context)
                               .preferedExercise = typeOfPreferedExercise;
+                        }
+                        if (index == activityOptions.length - 1) {
+                          typeOfPreferedExercise.add(
+                              BlocProvider.of<UserDataCubit>(context)
+                                  .preferedExerciseController
+                                  .text);
                         }
                       });
                     },

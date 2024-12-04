@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
-import 'package:graduation_project/core/widgets/custom_action_button.dart';
 import 'package:graduation_project/feature/user_data_form/presentation/views/widgets/gender_toggle_buttons.dart';
 import 'package:graduation_project/feature/user_data_form/presentation/views/widgets/tall_unit_toggle.dart';
 import 'package:graduation_project/feature/user_data_form/presentation/views/widgets/wieght_unite_toggle.dart';
@@ -86,11 +85,6 @@ class AboutUser extends StatelessWidget {
                   const WieghtUniteToggle(),
                 ],
               ),
-              verticalSpace(130),
-              CustomButton(
-                text: 'Continue',
-                onPressed: () {},
-              )
             ],
           ),
         ),

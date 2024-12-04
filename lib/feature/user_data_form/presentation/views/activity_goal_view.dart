@@ -42,7 +42,14 @@ class _ActivityGoalViewState extends State<ActivityGoalView> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          verticalSpace(35.h),
+          Text(
+            'What is your activity level?',
+            style: TextStyles.font18BlackBold,
+          ),
+          verticalSpace(40.h),
           Expanded(
             child: ListView.separated(
                 separatorBuilder: (context, index) => verticalSpace(32.h),
