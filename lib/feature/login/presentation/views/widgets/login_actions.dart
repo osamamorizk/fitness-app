@@ -57,7 +57,7 @@ class _LoginActionsState extends State<LoginActions> {
         verticalSpace(16.h),
         CustomButton(
           onPressed: () {
-            context.pushNamed(Routes.home);
+            context.pushNamed(Routes.dataForm);
             // if (context.read<LoginCubit>().formKey.currentState!.validate()) {
             //   context.read<LoginCubit>().login(
             //         email: context.read<LoginCubit>().emailController.text,

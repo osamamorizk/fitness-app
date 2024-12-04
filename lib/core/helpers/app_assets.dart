@@ -2,9 +2,45 @@
 class Assets {
   Assets._();
   
+  /// Assets for icons0bar
+  /// assets/icons/0bar.png
+  static const String icons0bar = "assets/icons/0bar.png";
+
+  /// Assets for icons1bar
+  /// assets/icons/1bar.png
+  static const String icons1bar = "assets/icons/1bar.png";
+
+  /// Assets for icons2bar
+  /// assets/icons/2bar.png
+  static const String icons2bar = "assets/icons/2bar.png";
+
+  /// Assets for icons3bar
+  /// assets/icons/3bar.png
+  static const String icons3bar = "assets/icons/3bar.png";
+
+  /// Assets for iconsGainWeight
+  /// assets/icons/gain_weight.png
+  static const String iconsGainWeight = "assets/icons/gain_weight.png";
+
   /// Assets for iconsGoogle
   /// assets/icons/google.png
   static const String iconsGoogle = "assets/icons/google.png";
+
+  /// Assets for iconsImproveHealth
+  /// assets/icons/improve_health.png
+  static const String iconsImproveHealth = "assets/icons/improve_health.png";
+
+  /// Assets for iconsLoseWeight
+  /// assets/icons/lose_weight.png
+  static const String iconsLoseWeight = "assets/icons/lose_weight.png";
+
+  /// Assets for iconsReduceStress
+  /// assets/icons/reduce_stress.png
+  static const String iconsReduceStress = "assets/icons/reduce_stress.png";
+
+  /// Assets for iconsStrenght
+  /// assets/icons/strenght.png
+  static const String iconsStrenght = "assets/icons/strenght.png";
 
   /// Assets for imagesOnboarding1
   /// assets/images/onboarding_1.png
