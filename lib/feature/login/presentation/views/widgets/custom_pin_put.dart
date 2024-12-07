@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_project/core/themes/colors_manger.dart';
+import 'package:graduation_project/core/themes/text_styles.dart';
 import 'package:pinput/pinput.dart';
 
 class OtpTextField extends StatefulWidget {
@@ -27,7 +28,7 @@ class _OtpTextFieldState extends State<OtpTextField> {
     final defaultPinTheme = PinTheme(
       width: 56,
       height: 56,
-      textStyle: const TextStyle(fontSize: 22, color: Colors.black),
+      textStyle: TextStyles.font22BlueBold,
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(width: 2, color: borderColor),
@@ -38,12 +39,11 @@ class _OtpTextFieldState extends State<OtpTextField> {
     return Form(
       key: formKey,
       child: Column(
-        // mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Directionality(
             textDirection: TextDirection.ltr,
             child: Pinput(
+              animationCurve: Curves.bounceIn,
               length: 4,
               controller: pinController,
               defaultPinTheme: defaultPinTheme,
@@ -60,15 +60,15 @@ class _OtpTextFieldState extends State<OtpTextField> {
                   Container(
                     margin: const EdgeInsets.only(bottom: 9),
                     width: 24,
-                    height: 2,
-                    color: Colors.black,
+                    height: 1,
+                    color: ColorsManger.darkBlue,
                   ),
                 ],
               ),
               focusedPinTheme: defaultPinTheme.copyWith(
                 decoration: defaultPinTheme.decoration!.copyWith(
                   border: Border(
-                    bottom: BorderSide(width: 2, color: focusedBorderColor),
+                    bottom: BorderSide(color: focusedBorderColor),
                   ),
                 ),
               ),
@@ -76,7 +76,7 @@ class _OtpTextFieldState extends State<OtpTextField> {
                 decoration: defaultPinTheme.decoration!.copyWith(
                   color: fillColor,
                   border: Border(
-                    bottom: BorderSide(width: 2, color: focusedBorderColor),
+                    bottom: BorderSide(color: focusedBorderColor),
                   ),
                 ),
               ),

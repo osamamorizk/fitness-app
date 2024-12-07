@@ -26,7 +26,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const SignUpView(),
         );
-      case Routes.home:
+      case Routes.bottomBar:
         return MaterialPageRoute(
           builder: (_) => const BottomBar(),
         );
