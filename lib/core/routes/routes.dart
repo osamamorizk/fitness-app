@@ -6,4 +6,5 @@ abstract class Routes {
   static const String dataForm = 'userData';
   static const String forgetPassword = 'forgetPassword';
   static const String verification = 'Verification';
+  static const String bottomBar = 'bottomBar';
 }

@@ -18,6 +18,26 @@ class Assets {
   /// assets/icons/3bar.png
   static const String icons3bar = "assets/icons/3bar.png";
 
+  /// Assets for iconsActiveDiet
+  /// assets/icons/active_diet.png
+  static const String iconsActiveDiet = "assets/icons/active_diet.png";
+
+  /// Assets for iconsActiveHome
+  /// assets/icons/active_home.png
+  static const String iconsActiveHome = "assets/icons/active_home.png";
+
+  /// Assets for iconsActiveProfile
+  /// assets/icons/active_profile.png
+  static const String iconsActiveProfile = "assets/icons/active_profile.png";
+
+  /// Assets for iconsActiveScan
+  /// assets/icons/active_scan.png
+  static const String iconsActiveScan = "assets/icons/active_scan.png";
+
+  /// Assets for iconsActiveWorkout
+  /// assets/icons/active_workout.png
+  static const String iconsActiveWorkout = "assets/icons/active_workout.png";
+
   /// Assets for iconsCardio
   /// assets/icons/cardio.png
   static const String iconsCardio = "assets/icons/cardio.png";
@@ -37,6 +57,26 @@ class Assets {
   /// Assets for iconsImproveHealth
   /// assets/icons/improve_health.png
   static const String iconsImproveHealth = "assets/icons/improve_health.png";
+
+  /// Assets for iconsInactiveDiet
+  /// assets/icons/inactive_diet.png
+  static const String iconsInactiveDiet = "assets/icons/inactive_diet.png";
+
+  /// Assets for iconsInactiveHome
+  /// assets/icons/inactive_home.png
+  static const String iconsInactiveHome = "assets/icons/inactive_home.png";
+
+  /// Assets for iconsInactiveProfile
+  /// assets/icons/inactive_profile.png
+  static const String iconsInactiveProfile = "assets/icons/inactive_profile.png";
+
+  /// Assets for iconsInactiveScan
+  /// assets/icons/inactive_scan.png
+  static const String iconsInactiveScan = "assets/icons/inactive_scan.png";
+
+  /// Assets for iconsInactiveWorkout
+  /// assets/icons/inactive_workout.png
+  static const String iconsInactiveWorkout = "assets/icons/inactive_workout.png";
 
   /// Assets for iconsLoseWeight
   /// assets/icons/lose_weight.png

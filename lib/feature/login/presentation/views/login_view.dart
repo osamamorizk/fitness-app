@@ -13,10 +13,10 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        body: Padding(
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 30.w),
           child: SingleChildScrollView(
             child: Column(
