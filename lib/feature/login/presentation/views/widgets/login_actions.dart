@@ -47,10 +47,13 @@ class _LoginActionsState extends State<LoginActions> {
                 ),
               ],
             ),
-            Text(
-              'Forgot Password?',
-              style: TextStyles.font14DarkBlueBold
-                  .copyWith(decoration: TextDecoration.underline),
+            TextButton(
+              onPressed: () => context.pushNamed(Routes.forgetPassword),
+              child: Text(
+                'Forgot Password?',
+                style: TextStyles.font14DarkBlueBold
+                    .copyWith(decoration: TextDecoration.underline),
+              ),
             ),
           ],
         ),

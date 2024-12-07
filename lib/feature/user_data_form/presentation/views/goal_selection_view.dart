@@ -41,7 +41,6 @@ class GoalSelectionScreenState extends State<GoalSelectionScreen> {
           ListView.separated(
             separatorBuilder: (context, index) => verticalSpace(24.h),
             shrinkWrap: true,
-            // physics: const NeverScrollableScrollPhysics(),
             itemCount: goals.length,
             itemBuilder: (context, index) {
               final goal = goals[index];
@@ -51,13 +50,11 @@ class GoalSelectionScreenState extends State<GoalSelectionScreen> {
                   setState(() {
                     if (isSelected) {
                       selectedGoals.remove(goal);
-                      BlocProvider.of<UserDataCubit>(context).userGoals =
-                          selectedGoals;
                     } else {
                       selectedGoals.add(goal);
-                      BlocProvider.of<UserDataCubit>(context).userGoals =
-                          selectedGoals;
                     }
+                    BlocProvider.of<UserDataCubit>(context).userGoals =
+                        selectedGoals;
                   });
                 },
                 child: CustomMultiSelectionItem(

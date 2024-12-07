@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/themes/colors_manger.dart';
-import 'package:graduation_project/core/themes/text_styles.dart';
 
 AppBar customDataFormBar(void Function()? onPressed, double? value) {
   return AppBar(
@@ -23,17 +21,17 @@ AppBar customDataFormBar(void Function()? onPressed, double? value) {
         color: ColorsManger.darkBlue,
       ),
     ),
-    actions: [
-      SizedBox(
-        width: 56.w,
-        child: TextButton(
-          child: Text(
-            'Skip',
-            style: TextStyles.font14BlackRegular,
-          ),
-          onPressed: () {},
-        ),
-      )
-    ],
+    // actions: [
+    //   SizedBox(
+    //     width: 56.w,
+    //     child: TextButton(
+    //       child: Text(
+    //         'Skip',
+    //         style: TextStyles.font14BlackRegular,
+    //       ),
+    //       onPressed: () {},
+    //     ),
+    //   )
+    // ],
   );
 }
