@@ -106,6 +106,50 @@ class Assets {
   /// assets/icons/yoga.png
   static const String iconsYoga = "assets/icons/yoga.png";
 
+  /// Assets for imagesExercisesABS
+  /// assets/images/exercises/ABS.png
+  static const String imagesExercisesABS = "assets/images/exercises/ABS.png";
+
+  /// Assets for imagesExercisesARM
+  /// assets/images/exercises/ARM.png
+  static const String imagesExercisesARM = "assets/images/exercises/ARM.png";
+
+  /// Assets for imagesExercisesBack
+  /// assets/images/exercises/Back.png
+  static const String imagesExercisesBack = "assets/images/exercises/Back.png";
+
+  /// Assets for imagesExercisesChest
+  /// assets/images/exercises/chest.png
+  static const String imagesExercisesChest = "assets/images/exercises/chest.png";
+
+  /// Assets for imagesExercisesLeg
+  /// assets/images/exercises/leg.png
+  static const String imagesExercisesLeg = "assets/images/exercises/leg.png";
+
+  /// Assets for imagesExercisesStretches
+  /// assets/images/exercises/stretches.png
+  static const String imagesExercisesStretches = "assets/images/exercises/stretches.png";
+
+  /// Assets for imagesGeneralPlanBodyweight
+  /// assets/images/general_plan/bodyweight.png
+  static const String imagesGeneralPlanBodyweight = "assets/images/general_plan/bodyweight.png";
+
+  /// Assets for imagesGeneralPlanFlexbility
+  /// assets/images/general_plan/flexbility.png
+  static const String imagesGeneralPlanFlexbility = "assets/images/general_plan/flexbility.png";
+
+  /// Assets for imagesGeneralPlanMuscleGain
+  /// assets/images/general_plan/muscle_gain.png
+  static const String imagesGeneralPlanMuscleGain = "assets/images/general_plan/muscle_gain.png";
+
+  /// Assets for imagesGeneralPlanStamina
+  /// assets/images/general_plan/stamina.png
+  static const String imagesGeneralPlanStamina = "assets/images/general_plan/stamina.png";
+
+  /// Assets for imagesGeneralPlanWeightLoss
+  /// assets/images/general_plan/weight_loss.png
+  static const String imagesGeneralPlanWeightLoss = "assets/images/general_plan/weight_loss.png";
+
   /// Assets for imagesOnboarding1
   /// assets/images/onboarding_1.png
   static const String imagesOnboarding1 = "assets/images/onboarding_1.png";
