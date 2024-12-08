@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 import 'package:graduation_project/core/helpers/spacing.dart';
 
@@ -18,8 +19,20 @@ class ExerciseView extends StatelessWidget {
           Expanded(
             child: ListView.separated(
               separatorBuilder: (context, index) => verticalSpace(16),
-              itemBuilder: (context, index) => ExerciseItem(
-                exerciseModel: exerciseList[index],
+              itemBuilder: (context, index) => GestureDetector(
+                onTap: () {
+                  Fluttertoast.showToast(
+                      msg: "Comming Soon",
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.BOTTOM,
+                      timeInSecForIosWeb: 1,
+                      backgroundColor: Colors.red,
+                      textColor: Colors.white,
+                      fontSize: 16.0);
+                },
+                child: ExerciseItem(
+                  exerciseModel: exerciseList[index],
+                ),
               ),
               itemCount: exerciseList.length,
             ),
