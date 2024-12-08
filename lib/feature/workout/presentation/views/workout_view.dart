@@ -28,7 +28,6 @@ class WorkoutView extends StatelessWidget {
             labelPadding: const EdgeInsets.all(0),
             padding: const EdgeInsets.symmetric(horizontal: 16),
             indicatorPadding: const EdgeInsets.symmetric(horizontal: 8),
-            indicatorWeight: 3,
             labelStyle: TextStyles.font14BlackRegular,
             dividerColor: Colors.transparent,
             indicatorSize: TabBarIndicatorSize.tab,

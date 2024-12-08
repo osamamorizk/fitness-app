@@ -11,13 +11,20 @@ class GeneralPlansView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-      child: ListView.separated(
-          itemCount: fitnessPlans.length,
-          separatorBuilder: (context, index) => verticalSpace(16),
-          itemBuilder: (context, index) => GeneralPlanItem(
-                generalPLanModel: fitnessPlans[index],
-              )),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        children: [
+          verticalSpace(8),
+          Expanded(
+            child: ListView.separated(
+                itemCount: fitnessPlans.length,
+                separatorBuilder: (context, index) => verticalSpace(16),
+                itemBuilder: (context, index) => GeneralPlanItem(
+                      generalPLanModel: fitnessPlans[index],
+                    )),
+          ),
+        ],
+      ),
     );
   }
 }
