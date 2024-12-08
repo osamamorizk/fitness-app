@@ -34,7 +34,7 @@ class _DietaryRestrictionsViewState extends State<DietaryRestrictionsView> {
           children: [
             verticalSpace(35.h),
             Text(
-              'Do you have any dietary restrictions, allergies or foods you dislike?',
+              'Do you follow any specific diet or have food allergies?',
               style: TextStyles.font18BlackBold,
             ),
             verticalSpace(40.h),

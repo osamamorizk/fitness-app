@@ -38,32 +38,33 @@ class GoalSelectionScreenState extends State<GoalSelectionScreen> {
             style: TextStyles.font18BlackBold,
           ),
           verticalSpace(35.h),
-          ListView.separated(
-            separatorBuilder: (context, index) => verticalSpace(24.h),
-            shrinkWrap: true,
-            itemCount: goals.length,
-            itemBuilder: (context, index) {
-              final goal = goals[index];
-              final bool isSelected = selectedGoals.contains(goal);
-              return GestureDetector(
-                onTap: () {
-                  setState(() {
-                    if (isSelected) {
-                      selectedGoals.remove(goal);
-                    } else {
-                      selectedGoals.add(goal);
-                    }
-                    BlocProvider.of<UserDataCubit>(context).userGoals =
-                        selectedGoals;
-                  });
-                },
-                child: CustomMultiSelectionItem(
-                  isSelected: isSelected,
-                  goal: goal,
-                  image: getImageForGoal(goal),
-                ),
-              );
-            },
+          Expanded(
+            child: ListView.separated(
+              separatorBuilder: (context, index) => verticalSpace(24.h),
+              itemCount: goals.length,
+              itemBuilder: (context, index) {
+                final goal = goals[index];
+                final bool isSelected = selectedGoals.contains(goal);
+                return GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      if (isSelected) {
+                        selectedGoals.remove(goal);
+                      } else {
+                        selectedGoals.add(goal);
+                      }
+                      BlocProvider.of<UserDataCubit>(context).userGoals =
+                          selectedGoals;
+                    });
+                  },
+                  child: CustomMultiSelectionItem(
+                    isSelected: isSelected,
+                    goal: goal,
+                    image: getImageForGoal(goal),
+                  ),
+                );
+              },
+            ),
           ),
         ],
       ),

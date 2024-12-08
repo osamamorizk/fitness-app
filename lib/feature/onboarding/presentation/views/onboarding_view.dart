@@ -17,27 +17,25 @@ class OnboardingView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              SizedBox(
-                height: 555,
-                child: PageView.builder(
-                  controller: pageController,
-                  itemCount: onboardingList.length,
-                  itemBuilder: (context, index) {
-                    return OnboardingItem(
-                      onboardingModel: onboardingList[index],
-                    );
-                  },
-                ),
+        body: Column(
+          children: [
+            Expanded(
+              child: PageView.builder(
+                controller: pageController,
+                itemCount: onboardingList.length,
+                itemBuilder: (context, index) {
+                  return OnboardingItem(
+                    onboardingModel: onboardingList[index],
+                  );
+                },
               ),
-              verticalSpace(16.h),
-              CustomIndicator(pageController: pageController),
-              verticalSpace(16.h),
-              const ActionsOnboarding(),
-            ],
-          ),
+            ),
+            verticalSpace(16.h),
+            CustomIndicator(pageController: pageController),
+            verticalSpace(16.h),
+            const ActionsOnboarding(),
+            verticalSpace(45),
+          ],
         ),
       ),
     );

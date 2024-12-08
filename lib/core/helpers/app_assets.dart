@@ -54,6 +54,10 @@ class Assets {
   /// assets/icons/google.png
   static const String iconsGoogle = "assets/icons/google.png";
 
+  /// Assets for iconsIconoirGym
+  /// assets/icons/iconoir_gym.png
+  static const String iconsIconoirGym = "assets/icons/iconoir_gym.png";
+
   /// Assets for iconsImproveHealth
   /// assets/icons/improve_health.png
   static const String iconsImproveHealth = "assets/icons/improve_health.png";
