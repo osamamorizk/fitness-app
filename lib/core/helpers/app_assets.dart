@@ -106,6 +106,26 @@ class Assets {
   /// assets/icons/yoga.png
   static const String iconsYoga = "assets/icons/yoga.png";
 
+  /// Assets for imagesGeneralPlanBodyweight
+  /// assets/images/general_plan/bodyweight.png
+  static const String imagesGeneralPlanBodyweight = "assets/images/general_plan/bodyweight.png";
+
+  /// Assets for imagesGeneralPlanFlexbility
+  /// assets/images/general_plan/flexbility.png
+  static const String imagesGeneralPlanFlexbility = "assets/images/general_plan/flexbility.png";
+
+  /// Assets for imagesGeneralPlanMuscleGain
+  /// assets/images/general_plan/muscle_gain.png
+  static const String imagesGeneralPlanMuscleGain = "assets/images/general_plan/muscle_gain.png";
+
+  /// Assets for imagesGeneralPlanStamina
+  /// assets/images/general_plan/stamina.png
+  static const String imagesGeneralPlanStamina = "assets/images/general_plan/stamina.png";
+
+  /// Assets for imagesGeneralPlanWeightLoss
+  /// assets/images/general_plan/weight_loss.png
+  static const String imagesGeneralPlanWeightLoss = "assets/images/general_plan/weight_loss.png";
+
   /// Assets for imagesOnboarding1
   /// assets/images/onboarding_1.png
   static const String imagesOnboarding1 = "assets/images/onboarding_1.png";
