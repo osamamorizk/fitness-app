@@ -21,7 +21,7 @@ class DontHaveAccount extends StatelessWidget {
               .copyWith(fontWeight: FontWeight.bold),
           recognizer: TapGestureRecognizer()
             ..onTap = () {
-              context.pushNamed(Routes.signUp);
+              context.pushReplacementNamed(Routes.signUp);
             },
         ),
       ]),

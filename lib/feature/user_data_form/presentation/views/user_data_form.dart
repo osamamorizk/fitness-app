@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:graduation_project/core/helpers/extensions.dart';
+import 'package:graduation_project/core/routes/routes.dart';
+import 'package:graduation_project/core/themes/colors_manger.dart';
 import 'package:graduation_project/feature/user_data_form/presentation/views/widgets/form_bar.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
 import 'package:graduation_project/core/widgets/custom_action_button.dart';
@@ -45,12 +48,19 @@ class _UserDataFormState extends State<UserDataForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: customDataFormBar(
-        () {
-          previousScreen();
-        },
-        (currentIndex + 1 < formScreens.length)
-            ? (currentIndex + 1) / formScreens.length
-            : 1.0,
+        currentIndex == 0
+            ? SizedBox.shrink()
+            : IconButton(
+                onPressed: () {
+                  previousScreen();
+                },
+                icon: Icon(
+                  size: 22,
+                  Icons.arrow_back,
+                  color: ColorsManger.darkBlue,
+                ),
+              ),
+        (currentIndex + 1) / formScreens.length,
       ),
       body: Column(
         children: [
@@ -60,9 +70,13 @@ class _UserDataFormState extends State<UserDataForm> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: CustomButton(
-              text: 'Continue',
+              text: currentIndex != formScreens.length - 1
+                  ? 'Continue'
+                  : 'submit',
               onPressed: () {
-                nextScreen();
+                currentIndex == formScreens.length - 1
+                    ? context.pushNamed(Routes.bottomBar)
+                    : nextScreen();
               },
             ),
           ),

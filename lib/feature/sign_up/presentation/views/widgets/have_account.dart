@@ -21,7 +21,7 @@ class HaveAccount extends StatelessWidget {
               .copyWith(fontWeight: FontWeight.bold),
           recognizer: TapGestureRecognizer()
             ..onTap = () {
-              context.pushNamed(Routes.login);
+              context.pushReplacementNamed(Routes.login);
             },
         ),
       ]),

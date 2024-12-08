@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
 import 'package:graduation_project/feature/onboarding/data/models/onboarding_model.dart';
@@ -15,11 +14,13 @@ class OnboardingItem extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Image.asset(
-          fit: BoxFit.fill,
-          width: double.infinity,
-          height: 525.h,
-          onboardingModel.image,
+        Flexible(
+          child: Image.asset(
+            fit: BoxFit.fill,
+            width: double.infinity,
+            // height: MediaQuery.sizeOf(context).height * .6.h,
+            onboardingModel.image,
+          ),
         ),
         verticalSpace(32),
         Text(

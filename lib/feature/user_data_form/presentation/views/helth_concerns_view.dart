@@ -34,7 +34,7 @@ class _HealthConcernsViewState extends State<HealthConcernsView> {
           children: [
             verticalSpace(35.h),
             Text(
-              'Do you have any medical conditions or physical limitations that we should be aware of?',
+              'Do you have any medical or physical concerns we should consider?',
               style: TextStyles.font18BlackBold,
             ),
             verticalSpace(40.h),

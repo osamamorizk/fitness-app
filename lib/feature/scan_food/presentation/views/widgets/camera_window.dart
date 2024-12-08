@@ -30,6 +30,13 @@ class _CameraWindowState extends State<CameraWindow>
   }
 
   @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    cameraController?.dispose();
+    super.dispose();
+  }
+
+  @override
   void initState() {
     setupCameraController();
     super.initState();
@@ -64,7 +71,7 @@ class _CameraWindowState extends State<CameraWindow>
   Widget buildUi() {
     if (cameraController == null ||
         cameraController?.value.isInitialized == false) {
-      return Center(child: CircularProgressIndicator());
+      return const Center(child: CircularProgressIndicator());
     } else {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.center,

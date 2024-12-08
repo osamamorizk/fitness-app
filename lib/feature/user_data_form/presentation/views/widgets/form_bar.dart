@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/themes/colors_manger.dart';
 
-AppBar customDataFormBar(void Function()? onPressed, double? value) {
+AppBar customDataFormBar(Widget icon, double? value) {
   return AppBar(
     backgroundColor: Colors.white,
-    leading: IconButton(
-      onPressed: onPressed,
-      icon: Icon(
-        size: 22,
-        Icons.arrow_back,
-        color: ColorsManger.darkBlue,
-      ),
-    ),
-    title: Expanded(
+    leading: icon,
+    title: SizedBox(
+      width: 250.w,
       child: LinearProgressIndicator(
         minHeight: 4,
         borderRadius: BorderRadius.circular(2),
@@ -21,17 +16,5 @@ AppBar customDataFormBar(void Function()? onPressed, double? value) {
         color: ColorsManger.darkBlue,
       ),
     ),
-    // actions: [
-    //   SizedBox(
-    //     width: 56.w,
-    //     child: TextButton(
-    //       child: Text(
-    //         'Skip',
-    //         style: TextStyles.font14BlackRegular,
-    //       ),
-    //       onPressed: () {},
-    //     ),
-    //   )
-    // ],
   );
 }

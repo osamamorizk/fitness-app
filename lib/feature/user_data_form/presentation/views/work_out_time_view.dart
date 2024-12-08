@@ -31,7 +31,7 @@ class _WorkoutTimeViewState extends State<WorkoutTimeView> {
           children: [
             verticalSpace(35.h),
             Text(
-              'How long would you like your workout plan to last?',
+              'How long can you spend working out?',
               style: TextStyles.font18BlackBold,
             ),
             verticalSpace(40.h),
