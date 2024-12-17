@@ -40,10 +40,10 @@ class DietView extends StatelessWidget {
                 text: 'Your plan',
               ),
               Tab(
-                text: 'Specific Dietary',
+                text: 'General Plan',
               ),
               Tab(
-                text: 'Exercises',
+                text: 'Specific Dietary',
               ),
             ],
           ),

@@ -30,7 +30,7 @@ class HomeView extends StatelessWidget {
             ],
           )),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
             const HomeBanner(),

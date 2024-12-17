@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:graduation_project/core/routes/routes.dart';
-import 'package:graduation_project/feature/bottom_nav_bar/presentation/manger/cubit/bottom_bar_cubit.dart';
 import 'package:graduation_project/feature/bottom_nav_bar/presentation/views/bottom_bar.dart';
 import 'package:graduation_project/feature/login/presentation/views/forget_password.dart';
 import 'package:graduation_project/feature/login/presentation/views/login_view.dart';
@@ -29,10 +28,7 @@ class AppRouter {
         );
       case Routes.bottomBar:
         return MaterialPageRoute(
-          builder: (_) => BlocProvider(
-            create: (context) => BottomBarCubit(),
-            child: const BottomBar(),
-          ),
+          builder: (_) => const BottomBar(),
         );
       case Routes.dataForm:
         return MaterialPageRoute(
