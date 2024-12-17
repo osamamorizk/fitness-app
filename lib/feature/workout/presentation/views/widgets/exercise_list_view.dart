@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:graduation_project/core/themes/colors_manger.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
 import 'package:graduation_project/feature/workout/presentation/views/widgets/exercise_item.dart';
 
@@ -10,16 +9,16 @@ class ExerciseListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leadingWidth: 40,
+        leadingWidth: 45,
         titleSpacing: 0,
         title: Text(
           '$exerciseGroup Exercises',
-          style: TextStyles.font16BlackBold,
+          style: TextStyles.font18BlackBold,
         ),
         scrolledUnderElevation: 0,
         backgroundColor: Colors.white,
         automaticallyImplyLeading: true,
-        iconTheme: IconThemeData(color: ColorsManger.darkBlue, size: 22),
+        iconTheme: const IconThemeData(color: Colors.black, size: 22),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
