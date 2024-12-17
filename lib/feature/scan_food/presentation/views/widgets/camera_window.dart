@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gal/gal.dart';
 import 'package:graduation_project/core/helpers/app_assets.dart';
+import 'package:graduation_project/core/helpers/spacing.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
 
 class CameraWindow extends StatefulWidget {
@@ -80,15 +81,16 @@ class _CameraWindowState extends State<CameraWindow>
                       child: Text(
                         'Scan your meal',
                         style: TextStyles.font16whiteRegular
-                            .copyWith(fontSize: 22),
+                            .copyWith(fontSize: 18),
                         textAlign: TextAlign.center,
                       ),
                     ),
                     const Spacer(),
                     Center(
                         child: Image.asset(
+                      color: Colors.white.withOpacity(.4),
+                      scale: 1,
                       Assets.imagesCameraFrame2,
-                      // scale: 1.2,
                     )),
                     const Spacer(),
                     IconButton(
@@ -96,12 +98,9 @@ class _CameraWindowState extends State<CameraWindow>
                         XFile picture = await cameraController!.takePicture();
                         Gal.putImage(picture.path);
                       },
-                      icon: Icon(
-                        Icons.camera,
-                        color: Colors.white,
-                        size: 70.sp,
-                      ),
+                      icon: Image.asset(Assets.imagesCameraButton),
                     ),
+                    verticalSpace(15),
                   ],
                 ),
               ],

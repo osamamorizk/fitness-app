@@ -38,6 +38,14 @@ class Assets {
   /// assets/icons/active_workout.png
   static const String iconsActiveWorkout = "assets/icons/active_workout.png";
 
+  /// Assets for iconsCalender
+  /// assets/icons/calender.png
+  static const String iconsCalender = "assets/icons/calender.png";
+
+  /// Assets for iconsCameraIcon
+  /// assets/icons/camera_icon.png
+  static const String iconsCameraIcon = "assets/icons/camera_icon.png";
+
   /// Assets for iconsCardio
   /// assets/icons/cardio.png
   static const String iconsCardio = "assets/icons/cardio.png";
@@ -106,6 +114,10 @@ class Assets {
   /// assets/icons/yoga.png
   static const String iconsYoga = "assets/icons/yoga.png";
 
+  /// Assets for iconsYourPlan
+  /// assets/icons/your_plan.png
+  static const String iconsYourPlan = "assets/icons/your_plan.png";
+
   /// Assets for imagesCameraButton
   /// assets/images/camera_button.png
   static const String imagesCameraButton = "assets/images/camera_button.png";
@@ -117,6 +129,10 @@ class Assets {
   /// Assets for imagesCameraFrame2
   /// assets/images/camera_frame2.png
   static const String imagesCameraFrame2 = "assets/images/camera_frame2.png";
+
+  /// Assets for imagesChallenge
+  /// assets/images/challenge.png
+  static const String imagesChallenge = "assets/images/challenge.png";
 
   /// Assets for imagesExercisesABS
   /// assets/images/exercises/ABS.png
@@ -162,6 +178,10 @@ class Assets {
   /// assets/images/general_plan/weight_loss.png
   static const String imagesGeneralPlanWeightLoss = "assets/images/general_plan/weight_loss.png";
 
+  /// Assets for imagesManHomeBanner
+  /// assets/images/man_home_banner.png
+  static const String imagesManHomeBanner = "assets/images/man_home_banner.png";
+
   /// Assets for imagesOnboarding1
   /// assets/images/onboarding_1.png
   static const String imagesOnboarding1 = "assets/images/onboarding_1.png";
@@ -174,12 +194,16 @@ class Assets {
   /// assets/images/onboarding_3.png
   static const String imagesOnboarding3 = "assets/images/onboarding_3.png";
 
+  /// Assets for imagesPlanboxBackground
+  /// assets/images/planbox_background.png
+  static const String imagesPlanboxBackground = "assets/images/planbox_background.png";
+
+  /// Assets for imagesScanBoxBackground
+  /// assets/images/scan_box_background.png
+  static const String imagesScanBoxBackground = "assets/images/scan_box_background.png";
+
   /// Assets for imagesTempIcon
   /// assets/images/temp_icon.png
   static const String imagesTempIcon = "assets/images/temp_icon.png";
-
-  /// Assets for manHomeBanner
-  /// assets/man_home_banner.png
-  static const String manHomeBanner = "assets/man_home_banner.png";
 }
 
