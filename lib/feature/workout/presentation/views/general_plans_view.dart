@@ -6,8 +6,8 @@ import 'package:graduation_project/core/helpers/spacing.dart';
 import 'package:graduation_project/feature/workout/data/models/general_plan_model.dart';
 import 'package:graduation_project/feature/workout/presentation/views/widgets/general_plan_item.dart';
 
-class GeneralPlansView extends StatelessWidget {
-  const GeneralPlansView({super.key});
+class WorkoutGeneralPlansView extends StatelessWidget {
+  const WorkoutGeneralPlansView({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -66,10 +66,10 @@ List<PersistentBottomNavBarItem> navBarsItems() {
 
 List<Widget> buildScreens() {
   return [
-    HomeView(),
-    DietView(),
-    ScanFoodView(),
-    WorkoutView(),
-    ProfileView(),
+    const HomeView(),
+    const DietView(),
+    const ScanFoodView(),
+    const WorkoutView(),
+    const ProfileView(),
   ];
 }

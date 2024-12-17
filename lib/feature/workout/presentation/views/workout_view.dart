@@ -21,7 +21,7 @@ class WorkoutView extends StatelessWidget {
             style: TextStyles.font22BlueBold,
           ),
           actions: const [
-            CustomNewPlanButtom(),
+            CustomNewPlanButton(),
           ],
           backgroundColor: Colors.white,
           bottom: TabBar(
@@ -54,7 +54,7 @@ class WorkoutView extends StatelessWidget {
 }
 
 List<Widget> taps = [
-  const YourPlanView(),
-  const GeneralPlansView(),
+  const WorkoutYourPlanView(),
+  const WorkoutGeneralPlansView(),
   const ExerciseView()
 ];

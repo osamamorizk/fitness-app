@@ -34,7 +34,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
             create: (context) => UserDataCubit(),
-            child: UserDataForm(),
+            child: const UserDataForm(),
           ),
         );
 

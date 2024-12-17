@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class WorkoutYourPlanView extends StatelessWidget {
-  const WorkoutYourPlanView({super.key});
+class DietGeneralPlans extends StatelessWidget {
+  const DietGeneralPlans({super.key});
 
   @override
   Widget build(BuildContext context) {

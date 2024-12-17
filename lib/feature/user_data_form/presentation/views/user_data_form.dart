@@ -49,7 +49,7 @@ class _UserDataFormState extends State<UserDataForm> {
     return Scaffold(
       appBar: customDataFormBar(
         currentIndex == 0
-            ? SizedBox.shrink()
+            ? const SizedBox.shrink()
             : IconButton(
                 onPressed: () {
                   previousScreen();

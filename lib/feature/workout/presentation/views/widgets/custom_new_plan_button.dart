@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/themes/colors_manger.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
 
-class CustomNewPlanButtom extends StatelessWidget {
-  const CustomNewPlanButtom({
+class CustomNewPlanButton extends StatelessWidget {
+  const CustomNewPlanButton({
     super.key,
   });
 
