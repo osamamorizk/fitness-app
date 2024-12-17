@@ -162,6 +162,10 @@ class Assets {
   /// assets/images/general_plan/weight_loss.png
   static const String imagesGeneralPlanWeightLoss = "assets/images/general_plan/weight_loss.png";
 
+  /// Assets for imagesManHomeBanner
+  /// assets/images/man_home_banner.png
+  static const String imagesManHomeBanner = "assets/images/man_home_banner.png";
+
   /// Assets for imagesOnboarding1
   /// assets/images/onboarding_1.png
   static const String imagesOnboarding1 = "assets/images/onboarding_1.png";
@@ -174,12 +178,16 @@ class Assets {
   /// assets/images/onboarding_3.png
   static const String imagesOnboarding3 = "assets/images/onboarding_3.png";
 
+  /// Assets for imagesPlanboxBackground
+  /// assets/images/planbox_background.png
+  static const String imagesPlanboxBackground = "assets/images/planbox_background.png";
+
+  /// Assets for imagesScanBoxBackground
+  /// assets/images/scan_box_background.png
+  static const String imagesScanBoxBackground = "assets/images/scan_box_background.png";
+
   /// Assets for imagesTempIcon
   /// assets/images/temp_icon.png
   static const String imagesTempIcon = "assets/images/temp_icon.png";
-
-  /// Assets for manHomeBanner
-  /// assets/man_home_banner.png
-  static const String manHomeBanner = "assets/man_home_banner.png";
 }
 
