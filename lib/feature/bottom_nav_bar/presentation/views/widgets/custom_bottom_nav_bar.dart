@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:graduation_project/feature/bottom_nav_bar/presentation/manger/cubit/bottom_bar_cubit.dart';
 import 'package:graduation_project/feature/bottom_nav_bar/presentation/views/widgets/bottom_bar_consts.dart';
 
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
@@ -10,14 +12,12 @@ class CustomBottomNavBar extends StatefulWidget {
   State<CustomBottomNavBar> createState() => _CustomBottomNavBarState();
 }
 
-PersistentTabController controller = PersistentTabController(initialIndex: 0);
-
 class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return PersistentTabView(
       context,
-      controller: controller,
+      controller: BlocProvider.of<BottomBarCubit>(context).controller,
       screens: buildScreens(),
       items: navBarsItems(),
       handleAndroidBackButtonPress: true,

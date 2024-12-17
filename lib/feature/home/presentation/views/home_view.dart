@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/helpers/app_assets.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
 
 import 'package:graduation_project/core/themes/text_styles.dart';
 import 'package:graduation_project/feature/home/presentation/views/widgets/home_banner.dart';
+import 'package:graduation_project/feature/home/presentation/views/widgets/scan_and_plan_box.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -35,41 +35,9 @@ class HomeView extends StatelessWidget {
           children: [
             const HomeBanner(),
             verticalSpace(20),
-            ScanAndPlanBox(),
+            const ScanAndPlanBox(),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class ScanAndPlanBox extends StatelessWidget {
-  const ScanAndPlanBox({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        const ScanAndPlanBox(),
-        horizontalSpace(10),
-        const ScanAndPlanBox(),
-      ],
-    );
-  }
-}
-
-class ScanFoodBox extends StatelessWidget {
-  const ScanFoodBox({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 90.h,
-      width: MediaQuery.sizeOf(context).width / 2,
-      decoration: BoxDecoration(
-        image: const DecorationImage(
-            image: AssetImage(Assets.imagesScanBoxBackground)),
-        borderRadius: BorderRadius.circular(16),
       ),
     );
   }

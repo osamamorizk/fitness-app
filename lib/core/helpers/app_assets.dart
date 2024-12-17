@@ -38,6 +38,10 @@ class Assets {
   /// assets/icons/active_workout.png
   static const String iconsActiveWorkout = "assets/icons/active_workout.png";
 
+  /// Assets for iconsCameraIcon
+  /// assets/icons/camera_icon.png
+  static const String iconsCameraIcon = "assets/icons/camera_icon.png";
+
   /// Assets for iconsCardio
   /// assets/icons/cardio.png
   static const String iconsCardio = "assets/icons/cardio.png";
@@ -105,6 +109,10 @@ class Assets {
   /// Assets for iconsYoga
   /// assets/icons/yoga.png
   static const String iconsYoga = "assets/icons/yoga.png";
+
+  /// Assets for iconsYourPlan
+  /// assets/icons/your_plan.png
+  static const String iconsYourPlan = "assets/icons/your_plan.png";
 
   /// Assets for imagesCameraButton
   /// assets/images/camera_button.png
