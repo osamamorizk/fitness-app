@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:graduation_project/core/functions/show_comming_soon_dialog.dart';
 
 import 'package:graduation_project/core/helpers/spacing.dart';
 
@@ -22,14 +22,7 @@ class WorkoutGeneralPlansView extends StatelessWidget {
                 separatorBuilder: (context, index) => verticalSpace(16),
                 itemBuilder: (context, index) => GestureDetector(
                       onTap: () {
-                        Fluttertoast.showToast(
-                            msg: "Comming Soon",
-                            toastLength: Toast.LENGTH_SHORT,
-                            gravity: ToastGravity.BOTTOM,
-                            timeInSecForIosWeb: 1,
-                            backgroundColor: Colors.red,
-                            textColor: Colors.white,
-                            fontSize: 16.0);
+                        showCommingSoonDialog(context);
                       },
                       child: GeneralPlanItem(
                         generalPLanModel: fitnessPlans[index],

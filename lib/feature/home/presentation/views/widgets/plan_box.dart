@@ -4,9 +4,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project/core/helpers/app_assets.dart';
 import 'package:graduation_project/core/helpers/extensions.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
-import 'package:graduation_project/core/themes/colors_manger.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
 import 'package:graduation_project/feature/bottom_nav_bar/presentation/manger/cubit/bottom_bar_cubit.dart';
+import 'package:graduation_project/feature/home/presentation/views/widgets/custom_plan_choose_button.dart';
 
 class YourPlanBox extends StatelessWidget {
   const YourPlanBox({super.key});
@@ -63,7 +63,7 @@ void showPlanDialog(BuildContext context) {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
-              CustomButton(
+              CustomChosePlanButton(
                 text: 'Diet plan',
                 icon: Icons.restaurant,
                 onPressed: () {
@@ -74,7 +74,7 @@ void showPlanDialog(BuildContext context) {
                 },
               ),
               verticalSpace(24),
-              CustomButton(
+              CustomChosePlanButton(
                 text: 'Workout plan',
                 icon: Icons.fitness_center,
                 onPressed: () {
@@ -90,45 +90,4 @@ void showPlanDialog(BuildContext context) {
       );
     },
   );
-}
-
-class CustomButton extends StatelessWidget {
-  final String text;
-  final IconData icon;
-  final VoidCallback onPressed;
-
-  const CustomButton(
-      {super.key,
-      required this.text,
-      required this.icon,
-      required this.onPressed});
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onPressed,
-      child: Container(
-        height: 50.h,
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(vertical: 15),
-        decoration: BoxDecoration(
-          color: ColorsManger.darkBlue,
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(icon, color: Colors.white, size: 20),
-              horizontalSpace(10),
-              Text(
-                text,
-                style: TextStyles.font16whiteBold,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 }

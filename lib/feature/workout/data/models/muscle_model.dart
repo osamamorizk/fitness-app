@@ -1,37 +1,37 @@
 import 'package:graduation_project/core/helpers/app_assets.dart';
 
-class ExerciseModel {
+class MuscleModel {
   final String name;
   final String image;
 
-  ExerciseModel({
+  MuscleModel({
     required this.name,
     required this.image,
   });
 }
 
-List<ExerciseModel> exerciseList = [
-  ExerciseModel(
+List<MuscleModel> exerciseList = [
+  MuscleModel(
     name: "Chest",
     image: Assets.imagesExercisesChest,
   ),
-  ExerciseModel(
+  MuscleModel(
     name: "Arm",
     image: Assets.imagesExercisesARM,
   ),
-  ExerciseModel(
+  MuscleModel(
     name: "Abs",
     image: Assets.imagesExercisesABS,
   ),
-  ExerciseModel(
+  MuscleModel(
     name: "Leg",
     image: Assets.imagesExercisesLeg,
   ),
-  ExerciseModel(
+  MuscleModel(
     name: "Back & Shoulder",
     image: Assets.imagesExercisesBack,
   ),
-  ExerciseModel(
+  MuscleModel(
     name: "Stretches",
     image: Assets.imagesExercisesStretches,
   ),
