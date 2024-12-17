@@ -38,6 +38,17 @@ class TextStyles {
     fontWeight: FontWeight.bold,
     color: Colors.black,
   );
+  static final TextStyle font16BlackBold = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+  );
+
+  static final TextStyle font16BlackRegular = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.normal,
+    color: Colors.black,
+  );
   static final TextStyle font16whiteBold = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.bold,

@@ -28,9 +28,9 @@ class DietView extends StatelessWidget {
             indicator: UnderlineTabIndicator(
               borderSide: BorderSide(
                 color: ColorsManger.darkBlue,
-                width: 2.0,
+                width: 2.2,
               ),
-              insets: const EdgeInsets.symmetric(horizontal: 30.0),
+              insets: const EdgeInsets.symmetric(horizontal: 25.0),
             ),
             labelPadding: const EdgeInsets.all(0),
             padding: const EdgeInsets.symmetric(horizontal: 16),

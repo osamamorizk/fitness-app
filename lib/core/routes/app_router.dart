@@ -9,6 +9,7 @@ import 'package:graduation_project/feature/onboarding/presentation/views/onboard
 import 'package:graduation_project/feature/sign_up/presentation/views/sign_up_view.dart';
 import 'package:graduation_project/feature/user_data_form/presentation/manger/cubit/user_data_cubit.dart';
 import 'package:graduation_project/feature/user_data_form/presentation/views/user_data_form.dart';
+import 'package:graduation_project/feature/workout/presentation/views/widgets/exercise_list_view.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -45,6 +46,12 @@ class AppRouter {
       case Routes.verification:
         return MaterialPageRoute(
           builder: (_) => const Verification(),
+        );
+      case Routes.exerciseListView:
+        return MaterialPageRoute(
+          builder: (_) => const ExerciseListView(
+            exerciseGroup: 'Exercise List',
+          ),
         );
 
       default:

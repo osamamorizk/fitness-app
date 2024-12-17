@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_project/core/themes/colors_manger.dart';
 import 'package:graduation_project/core/themes/text_styles.dart';
-import 'package:graduation_project/feature/workout/presentation/views/exercise_view.dart';
+import 'package:graduation_project/feature/workout/presentation/views/muscle_group_view.dart';
 import 'package:graduation_project/feature/workout/presentation/views/general_plans_view.dart';
 import 'package:graduation_project/feature/workout/presentation/views/widgets/custom_new_plan_button.dart';
 import 'package:graduation_project/feature/workout/presentation/views/your_plan_view.dart';
@@ -56,5 +56,5 @@ class WorkoutView extends StatelessWidget {
 List<Widget> taps = [
   const WorkoutYourPlanView(),
   const WorkoutGeneralPlansView(),
-  const ExerciseView()
+  const MuscleGroupView()
 ];
