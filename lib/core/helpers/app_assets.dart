@@ -38,6 +38,10 @@ class Assets {
   /// assets/icons/active_workout.png
   static const String iconsActiveWorkout = "assets/icons/active_workout.png";
 
+  /// Assets for iconsCalender
+  /// assets/icons/calender.png
+  static const String iconsCalender = "assets/icons/calender.png";
+
   /// Assets for iconsCameraIcon
   /// assets/icons/camera_icon.png
   static const String iconsCameraIcon = "assets/icons/camera_icon.png";
@@ -125,6 +129,10 @@ class Assets {
   /// Assets for imagesCameraFrame2
   /// assets/images/camera_frame2.png
   static const String imagesCameraFrame2 = "assets/images/camera_frame2.png";
+
+  /// Assets for imagesChallenge
+  /// assets/images/challenge.png
+  static const String imagesChallenge = "assets/images/challenge.png";
 
   /// Assets for imagesExercisesABS
   /// assets/images/exercises/ABS.png
