@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:graduation_project/core/functions/show_comming_soon_dialog.dart';
 import 'package:graduation_project/core/helpers/app_assets.dart';
 import 'package:graduation_project/core/helpers/spacing.dart';
 
@@ -54,7 +55,9 @@ class HomeView extends StatelessWidget {
             ),
             SliverList(
               delegate: SliverChildBuilderDelegate(
-                (context, index) => const ChanllengItem(),
+                (context, index) => GestureDetector(
+                    onTap: () => showCommingSoonDialog(context),
+                    child: const ChanllengItem()),
                 childCount: 4,
               ),
             ),
