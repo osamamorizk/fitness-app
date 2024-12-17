@@ -15,6 +15,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          scrolledUnderElevation: 0,
           titleSpacing: 0,
           backgroundColor: Colors.white,
           leading: Image.asset(Assets.imagesTempIcon),

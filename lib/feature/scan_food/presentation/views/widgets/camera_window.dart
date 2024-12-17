@@ -81,13 +81,15 @@ class _CameraWindowState extends State<CameraWindow>
                       child: Text(
                         'Scan your meal',
                         style: TextStyles.font16whiteRegular
-                            .copyWith(fontSize: 22),
+                            .copyWith(fontSize: 18),
                         textAlign: TextAlign.center,
                       ),
                     ),
                     const Spacer(),
                     Center(
                         child: Image.asset(
+                      color: Colors.white.withOpacity(.4),
+                      scale: 1,
                       Assets.imagesCameraFrame2,
                     )),
                     const Spacer(),
@@ -98,7 +100,7 @@ class _CameraWindowState extends State<CameraWindow>
                       },
                       icon: Image.asset(Assets.imagesCameraButton),
                     ),
-                    verticalSpace(20),
+                    verticalSpace(15),
                   ],
                 ),
               ],
